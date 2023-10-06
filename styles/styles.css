@@ -58,9 +58,11 @@ h1, h2, h3, h4, h5, h6 {
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    height: 90vh;
     flex-shrink: 1;
     flex-grow: 0;
+    position: relative;
+    background: rgb(72,69,228);
+    background: linear-gradient(63deg, rgba(72,69,228,1) 28%, rgba(87,34,205,1) 88%);
 }
 .inner-content-container {
     /*border: red 2px solid;*/
@@ -71,8 +73,8 @@ h1, h2, h3, h4, h5, h6 {
     padding-top: 50px;
     padding-bottom: 200px;
     width: 1050px;
-    column-gap: 40px;
-    position: relative;
+    column-gap: 0;
+    /*position: relative;*/
     flex-grow: 0;
     flex-shrink: 1;
 }
@@ -92,15 +94,15 @@ button {
     padding: 23px 32px;
     color: whitesmoke;
     border: transparent;
-    margin-top: 10px;
+    margin-top: 30px;
     margin-left: -5px;
     border-radius: 50px;
     outline: transparent;
     width: 340px;
     height: 80px;
     align-self: center;
-    font-size: 25px;
-    font-weight: 200;
+    font-size: 20px;
+    text-transform: uppercase;
     box-shadow: 0 7px 4px rgba(0, 0, 0, 0.26);
 
 }
@@ -155,8 +157,15 @@ p {
     display: flex;
     flex-direction: column;
     position: absolute;
-    bottom: 0.1px;
-    left: 490px;
+    bottom: 0;
+    left: 47.5%;
+}
+.figure {
+    width: 0;
+    height: 0;
+    border-left: 0 solid transparent;
+    border-right: 100vw solid transparent;
+    border-bottom: 50px solid white;
 
 }
 /* --------------- 4.2 Introduction ------------------- */
@@ -192,6 +201,13 @@ h2 {
     color: var(--primary);
     padding: 20px;
     font-size: 35px;
+}
+
+.introduction_4 {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--text-dark);
 
 }
 /* ------------------------------- 5. Media Queries -------------------------------- */
